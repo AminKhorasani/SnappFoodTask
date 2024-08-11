@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 dataset_path = 'Datasets/SnappFoodDataset.csv'
 data = pd.read_csv(dataset_path)
 
+
 # Function to convert Persian numbers to Latin numbers
 def persian_to_latin(input_str):
     persian_nums = '۰۱۲۳۴۵۶۷۸۹'
