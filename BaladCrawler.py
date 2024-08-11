@@ -72,4 +72,4 @@ data = crawler.crawl()
 
 
 df = pd.DataFrame(data)
-df.to_csv('BaladDataset.csv', index=True)
+df.to_csv('Datasets/BaladDataset.csv', index=True)

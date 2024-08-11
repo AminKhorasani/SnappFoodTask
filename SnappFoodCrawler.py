@@ -95,7 +95,7 @@ class RestaurantScraper:
         self.wait_for_presence()
         self.scroll_page()
         self.collect_data_from_restaurants()
-        self.save_to_csv('SnappFoodDataset1.csv')
+        self.save_to_csv('Datasets/SnappFoodDataset.csv')
         self.driver.quit()
 
 
