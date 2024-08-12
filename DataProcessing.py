@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.cluster import KMeans
 import scipy.stats as stats
+from sqlalchemy import create_engine
 
 
 dataset_path = 'Datasets/SnappFoodDataset.csv'
@@ -163,3 +164,7 @@ plt.show()
 
 # Save data to csv
 data.to_csv('Datasets/FinalSnappFoodDataset.csv', index=False)
+
+engine = create_engine('mysql+pymysql://user:@Amin7674@localhost/SnappFoodData')
+data.to_sql('Orders', con=engine, index=False, if_exists='append')
+
