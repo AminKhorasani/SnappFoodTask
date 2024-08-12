@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.cluster import KMeans
 import scipy.stats as stats
-from sqlalchemy import create_engine
 
 
 dataset_path = 'Datasets/SnappFoodDataset.csv'
