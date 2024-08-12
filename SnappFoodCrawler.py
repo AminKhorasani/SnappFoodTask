@@ -15,6 +15,7 @@ class RestaurantScraper:
         self.url = url
         self.driver = self.initialize_driver()
         self.restaurants_data = []
+        self.result = 'Dataset/SnappFoodCrawler.csv'
 
     def initialize_driver(self):
         webdriver_service = Service(self.driver_path)
@@ -89,6 +90,10 @@ class RestaurantScraper:
         df.to_csv(filename, index=False)
         print(f"Data collection complete and saved to '{filename}'")
 
+    def result(self):
+        path = 'Datasets/SnappFoodDataset.csv'
+        return path
+
     def run(self):
         self.navigate()
         self.click_link()
@@ -96,6 +101,7 @@ class RestaurantScraper:
         self.scroll_page()
         self.collect_data_from_restaurants()
         self.save_to_csv('Datasets/SnappFoodDataset.csv')
+        self.result = 'Datasets/SnappFoodDataset'
         self.driver.quit()
 
 
