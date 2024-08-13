@@ -23,6 +23,7 @@ The interactive dashboard is a pivotal component of this project, designed to vi
 
 ### Database Management
 This section can outline the structured approach taken to ensure that the dataset is optimally stored, managed, and accessed in a way that supports the broader goals of your data analysis project.
+![Image](Figures/Schema.png)
 
 
 ## How to use
